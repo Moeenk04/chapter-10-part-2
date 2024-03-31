@@ -1,0 +1,15 @@
+/* Change background color to light green when direct child divs of .parent are hovered */
+
+.parent > div:hover {
+    background-color: lightgreen;
+}
+
+/* Change color to blue for the immediately following sibling of a hovered .sibling element */
+.sibling:hover + .sibling {
+    color: blue;
+} 
+
+/* Italicize text of all following siblings of a hovered .general-sibling element */
+.general-sibling:hover ~ .general-sibling {
+    font-style: italic;
+}
